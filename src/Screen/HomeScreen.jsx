@@ -9,8 +9,8 @@ function HomeScreen() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        // Updated to use your live Render backend URL
-        const { data } = await axios.get("https://my-react-a00.onrender.com/api/products/");
+        // Updated with your correct live Render backend domain
+        const { data } = await axios.get("https://ecommes-backend.onrender.com/api/products/");
         setproducts(data);
       } catch (error) {
         console.error("error fetching products", error);
